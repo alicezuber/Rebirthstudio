@@ -97,8 +97,10 @@ section {
     width: 75%;
     float:left;
 }
+
 .event{
-    border: 2px dashed black;
+    
+    border: 2px black;
     height: 800px;
     width: 20%;
     float:right;
@@ -110,6 +112,11 @@ section {
     width: 33%;
     float:left;
 }
+.newspost a{
+    text-decoration: none;
+    color: black;
+    border: 2px black;
+}
 .commodity{
     font-size: 40px;
     border: 2px dashed black;
@@ -117,10 +124,21 @@ section {
     width: 33%;
     float:left;
 }
+.commodity a{
+    text-decoration: none;
+    color: black;
+    border: 2px black;
+}
+
 .else{
     font-size: 40px;
     border: 2px dashed black;
     height: 90%;
     width: 33%;
     float:left;
+}
+.else a{
+    text-decoration: none;
+    color: black;
+    border: 2px black;
 }
