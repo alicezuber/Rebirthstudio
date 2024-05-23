@@ -31,6 +31,9 @@ nav ul li a {
     display: block;
     padding: 30px 10px 0px 10px;/*上右下左*/
 }
+nav ul li a:hover {
+    border-top: 2px solid  black;
+}
 
 nav ul li .highlight {
     font-size: 50px; 
@@ -66,27 +69,27 @@ main {
 
 section {
     
-    padding: 20px 20px 0px 20px;
+    padding: 20px 1% 0px 1%;
     margin-bottom: 20px;
     text-align: center;
 }
 
 .carousel {
-    border: 2px black;
+    /*border: 2px dashed black;*/
     height: 754px;
     width: 75%;
     float:left;
 }
 
 .logo {
-    border: 2px black;
+    /*border: 2px dashed black;*/
     height: 255px;
     width: 20%;
     float:right;
 }
 
 .introduction {
-    border: 2px black;
+    /*border: 2px dashed black;*/
     height: 455px;
     width: 20%;
     float:right;
@@ -107,7 +110,7 @@ section {
 }
 .newspost{
     font-size: 40px;
-    border: 2px black;
+    /*border: 2px dashed black;*/
     height: 90%;
     width: 33%;
     float:left;
@@ -118,7 +121,7 @@ section {
 }
 .commodity{
     font-size: 40px;
-    border: 2px black;
+    /*border: 2px dashed black;*/
     height: 90%;
     width: 33%;
     float:left;
@@ -130,7 +133,7 @@ section {
 
 .else{
     font-size: 40px;
-    border: 2px black;
+    /*border: 2px dashed black;*/
     height: 90%;
     width: 33%;
     float:left;
@@ -140,7 +143,7 @@ section {
     color: black;
 }
 .post{
-    border: 2px black;
+    /*border: 2px dashed black;*/
     height: 35%;
     width: 90%;
     margin: 5% 5% 0px 5%;/*上右下左*/
@@ -152,9 +155,41 @@ section {
     overflow: hidden;
 }
 .postphoto{
-    border: 2px black;
-    background-color: rgba(0, 255, 255, 0.149);
+    /*border: 2px dashed black;*/
+    background-color: rgba(0, 255, 255, 0.1);
     height: 70%;
     width: 97%;
     margin: 1% 1% 0px 1%;/*上右下左*/
+}
+.social{
+    padding: 5% 0% 5% 0%;
+    margin: 0% 0% 10% 0%;
+}
+.YT{
+    /*border: 2px dashed black;*/
+    height: 800px;
+    width: 32%;
+    float:left;
+    margin: 0% 0% 0% 1%;
+}
+.X{
+    /*border: 2px dashed black;*/
+    height: 800px;
+    width: 32%;
+    float:left;
+    margin: 0% 0% 0% 1%;
+}
+.FB{
+    /*border: 2px dashed black;*/
+    height: 800px;
+    width: 32%;
+    float:left;
+    margin: 0% 0% 0% 1%;
+}
+.footer{
+    margin: 5% 0% 0% 0%;
+    /*border: 2px dashed black;*/
+    height: 150px;
+    width: 100%;
+    float:left;
 }
