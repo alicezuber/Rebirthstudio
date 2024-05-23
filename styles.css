@@ -72,27 +72,27 @@ section {
 }
 
 .carousel {
-    border: 2px dashed black;
+    border: 2px black;
     height: 754px;
     width: 75%;
     float:left;
 }
 
 .logo {
-    border: 2px dashed black;
+    border: 2px black;
     height: 255px;
     width: 20%;
     float:right;
 }
 
 .introduction {
-    border: 2px dashed black;
+    border: 2px black;
     height: 455px;
     width: 20%;
     float:right;
 }
 .news{
-    border: 2px dashed black;
+    border: 2px solid black;
     height: 800px;
     width: 75%;
     float:left;
@@ -100,14 +100,14 @@ section {
 
 .event{
     
-    border: 2px black;
+    border: 2px solid  black;
     height: 800px;
     width: 20%;
     float:right;
 }
 .newspost{
     font-size: 40px;
-    border: 2px dashed black;
+    border: 2px black;
     height: 90%;
     width: 33%;
     float:left;
@@ -115,11 +115,10 @@ section {
 .newspost a{
     text-decoration: none;
     color: black;
-    border: 2px black;
 }
 .commodity{
     font-size: 40px;
-    border: 2px dashed black;
+    border: 2px black;
     height: 90%;
     width: 33%;
     float:left;
@@ -127,12 +126,11 @@ section {
 .commodity a{
     text-decoration: none;
     color: black;
-    border: 2px black;
 }
 
 .else{
     font-size: 40px;
-    border: 2px dashed black;
+    border: 2px black;
     height: 90%;
     width: 33%;
     float:left;
@@ -140,5 +138,23 @@ section {
 .else a{
     text-decoration: none;
     color: black;
+}
+.post{
     border: 2px black;
+    height: 35%;
+    width: 90%;
+    margin: 5% 5% 0px 5%;/*上右下左*/
+    text-align:center;
+}
+.post a{
+    margin: 0% 5% 0px 5%;
+    font-size: 40px;
+    overflow: hidden;
+}
+.postphoto{
+    border: 2px black;
+    background-color: rgba(0, 255, 255, 0.149);
+    height: 70%;
+    width: 97%;
+    margin: 1% 1% 0px 1%;/*上右下左*/
 }
