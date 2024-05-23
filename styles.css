@@ -75,21 +75,21 @@ section {
 }
 
 .carousel {
-    /*border: 2px dashed black;*/
+    border: 2px dashed black;
     height: 754px;
     width: 75%;
     float:left;
 }
 
 .logo {
-    /*border: 2px dashed black;*/
+    border: 2px dashed black;
     height: 255px;
     width: 20%;
     float:right;
 }
 
 .introduction {
-    /*border: 2px dashed black;*/
+    border: 2px dashed black;
     height: 455px;
     width: 20%;
     float:right;
@@ -110,7 +110,7 @@ section {
 }
 .newspost{
     font-size: 40px;
-    /*border: 2px dashed black;*/
+    border: 2px dashed black;
     height: 90%;
     width: 33%;
     float:left;
@@ -121,7 +121,7 @@ section {
 }
 .commodity{
     font-size: 40px;
-    /*border: 2px dashed black;*/
+    border: 2px dashed black;
     height: 90%;
     width: 33%;
     float:left;
@@ -133,7 +133,7 @@ section {
 
 .else{
     font-size: 40px;
-    /*border: 2px dashed black;*/
+    border: 2px dashed black;
     height: 90%;
     width: 33%;
     float:left;
@@ -143,7 +143,7 @@ section {
     color: black;
 }
 .post{
-    /*border: 2px dashed black;*/
+    border: 2px dashed black;
     height: 35%;
     width: 90%;
     margin: 5% 5% 0px 5%;/*上右下左*/
@@ -155,7 +155,7 @@ section {
     overflow: hidden;
 }
 .postphoto{
-    /*border: 2px dashed black;*/
+    border: 2px dashed black;
     background-color: rgba(0, 255, 255, 0.1);
     height: 70%;
     width: 97%;
@@ -166,29 +166,29 @@ section {
     margin: 0% 0% 10% 0%;
 }
 .YT{
-    /*border: 2px dashed black;*/
-    height: 800px;
+    border: 2px dashed black;
+    height: 1000px;
     width: 32%;
     float:left;
     margin: 0% 0% 0% 1%;
 }
 .X{
-    /*border: 2px dashed black;*/
-    height: 800px;
+    border: 2px dashed black;
+    height: 1000px;
     width: 32%;
     float:left;
     margin: 0% 0% 0% 1%;
 }
 .FB{
-    /*border: 2px dashed black;*/
-    height: 800px;
+    border: 2px dashed black;
+    height: 1000px;
     width: 32%;
     float:left;
     margin: 0% 0% 0% 1%;
 }
 .footer{
     margin: 5% 0% 0% 0%;
-    /*border: 2px dashed black;*/
+    border: 2px dashed black;
     height: 150px;
     width: 100%;
     float:left;
