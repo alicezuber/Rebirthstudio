@@ -1,6 +1,26 @@
 html, body {
     touch-action: manipulation;
   }
+.owl-theme .item {
+height: 10rem;
+background: #4dc7a0;
+padding: 1rem;
+}
+
+.owl-carousel .item h4 {
+color: #fff;
+font-weight: 400;
+font-size: 1.4375rem;
+margin-top: 0rem;
+}
+a:hover,
+a:visited,
+a:focus {
+    color: inherit; /* 繼承父元素的文字顏色，防止 hover 狀態改變顏色 */
+    text-decoration: none; /* 在任何狀態下都不顯示底線 */
+    background-color: transparent; /* 確保背景在任何狀態下都是透明的 */
+    
+}
 /* 為桌面設備設定樣式 */
 @media screen and (min-width: 992px) and (max-width: 1920px) {
     body {
@@ -38,8 +58,18 @@ html, body {
     }
     nav ul li a:hover {
         border-top: 2px solid  black;
+        text-decoration: none;
     }
-
+    nav ul li p {
+        text-decoration: none;
+        color: black;
+        display: block;
+        padding: 30px 10px 0px 10px;/*上右下左*/
+    }
+    nav ul li p:hover {
+        border-top: 2px solid  black;
+        text-decoration: none;
+    }
     nav ul li .highlight {
         font-size: 50px; 
         font-weight: bold;
@@ -47,6 +77,7 @@ html, body {
     }
 
     nav ul li .dropdown {
+        text-decoration: none;
         display: none;
         position: absolute;
         top: 100%;
@@ -56,16 +87,19 @@ html, body {
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         list-style: none;
         text-align: center;
-        
+        z-index: 1050
         
     }
 
     nav ul li .dropdown li a {
+        text-decoration: none;
         padding: 10px;
+        z-index: 1050
     }
 
     nav ul li:hover .dropdown {
         display: block;
+        z-index: 1050
     }
 
     main {
@@ -78,21 +112,33 @@ html, body {
         margin-bottom: 20px;
         text-align: center;
     }
+    .carousel{
 
-    .carousel {
-        /*border: 2px dashed black;*/
         height: 754px;
         width: 75%;
         float:left;
+        margin: 0% 0% 20px 0%;
+        padding: 0% 0% 0% 0%;
+        }
+    .carousel.slide {
+        width: 100%;
+        
     }
 
     .logo {
-        /*border: 2px dashed black;*/
+        /* border: 2px dashed black; */
+        /* background-color: rgba(0, 255, 255, 0.1); */
         height: 255px;
         width: 20%;
         float:right;
+        align-items: center;
+        padding: 0%;
     }
-
+    .logo img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover
+      }
     .introduction {
         /*border: 2px dashed black;*/
         height: 455px;
@@ -147,25 +193,43 @@ html, body {
         text-decoration: none;
         color: black;
     }
-    .post{
+    .post1{
         /*border: 2px dashed black;*/
         height: 35%;
         width: 90%;
         margin: 5% 5% 0px 5%;/*上右下左*/
         text-align:center;
     }
-    .post a{
+    .post1 a{
+        margin: 0% 5% 0px 5%;
+        font-size: 40px;
+        overflow: hidden;
+    }
+    .post2{
+        /*border: 2px dashed black;*/
+        height: 35%;
+        width: 90%;
+        margin: 5% 5% 0px 5%;/*上右下左*/
+        text-align:center;
+    }
+    .post2 a{
         margin: 0% 5% 0px 5%;
         font-size: 40px;
         overflow: hidden;
     }
     .postphoto{
         /*border: 2px dashed black;*/
-        background-color: rgba(0, 255, 255, 0.1);
+        /* background-color: rgba(0, 255, 255, 0.1); */
         height: 70%;
-        width: 97%;
+        width: 100%;
         margin: 1% 1% 0px 1%;/*上右下左*/
+        padding: 0%;
+        align-items: center;
     }
+    .postphoto img {
+        max-width: 100%;
+        max-height: 100%;
+      }
     .social{
         padding: 5% 0% 5% 0%;
         margin: 0% 0% 10% 0%;
@@ -192,15 +256,244 @@ html, body {
         margin: 0% 0% 0% 1%;
     }
     .footer{
+        background-color: rgb(98, 96, 96);
         margin: 5% 0% 0% 0%;
         /*border: 2px dashed black;*/
-        height: 150px;
+        height: 300px;
         width: 100%;
         float:left;
+    }
+    .footer img{
+        max-width: 50%;
+        max-height: 50%;
+    }
+    #pano {
+        width: 100%;
+        height: 100vh;
+        background-color: black; /* 背景色設置為黑色便於檢查 */
     }
 }
 /* 為手機設備設定樣式 */
 @media screen and (max-width: 767px) {
     /* 在這裡添加手機專用的 CSS 規則 */
-    
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    header {
+        background-color: #f8f8f8;
+        padding: 20px;
+        text-align: center;
+    }
+
+    nav ul {
+        
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    nav ul li {
+        position: relative;
+        
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: black;
+        display: block;
+        padding: 30px 10px 0px 10px;/*上右下左*/
+    }
+    nav ul li a:hover {
+        border-top: 2px solid  black;
+        text-decoration: none;
+    }
+    nav ul li p {
+        text-decoration: none;
+        color: black;
+        display: block;
+        padding: 30px 10px 0px 10px;/*上右下左*/
+    }
+    nav ul li p:hover {
+        border-top: 2px solid  black;
+        text-decoration: none;
+    }
+    nav ul li .highlight {
+        font-size: 50px; 
+        font-weight: bold;
+        padding: 10px 10px 0px 10px;
+    }
+
+    nav ul li .dropdown {
+        text-decoration: none;
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #f8f8f8;
+        padding: 0;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        list-style: none;
+        text-align: center;
+        z-index: 1050
+        
+    }
+
+    nav ul li .dropdown li a {
+        text-decoration: none;
+        padding: 10px;
+        z-index: 1050
+    }
+
+    nav ul li:hover .dropdown {
+        display: block;
+        z-index: 1050
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    section {
+        
+        padding: 20px 1% 0px 1%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .carousel{
+
+        height: 200px;
+        width: 100%;
+        float:left;
+        margin: 0% 0% 20px 0%;
+        padding: 0% 0% 0% 0%;
+        }
+    .carousel.slide {
+        width: 100%;
+        
+    }
+
+    .logo {
+        display: none; /* 隱藏元素 */
+    }
+    .logo img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: cover
+      }
+    .introduction {
+        display: none; /* 隱藏元素 */
+    }
+    .news{
+        border: 2px solid black;
+        height: 800px;
+        width: 100%;
+        float:left;
+    }
+
+    .event{
+        
+        border: 2px solid  black;
+        height: 800px;
+        width: 100%;
+        float:right;
+    }
+    .newspost{
+        font-size: 40px;
+        /*border: 2px dashed black;*/
+        height: 30%;
+        width: 100%;
+        float:left;
+    }
+    .newspost a{
+        text-decoration: none;
+        color: black;
+    }
+    .commodity{
+        font-size: 40px;
+        /*border: 2px dashed black;*/
+        height: 30%;
+        width: 100%;
+        float:left;
+    }
+    .commodity a{
+        text-decoration: none;
+        color: black;
+    }
+
+    .else{
+        font-size: 40px;
+        /*border: 2px dashed black;*/
+        height: 30%;
+        width: 100%;
+        float:left;
+    }
+    .else a{
+        text-decoration: none;
+        color: black;
+    }
+    .post1{
+        /*border: 2px dashed black;*/
+        height: 50%;
+        width: 90%;
+        margin: 5% 5% 0px 5%;/*上右下左*/
+        text-align:center;
+    }
+    .post1 a{
+        margin: 0% 5% 0px 5%;
+        font-size: 30px;
+        overflow: hidden;
+    }
+    .post2{
+        display: none; /* 隱藏元素 */
+    }
+    .postphoto{
+        /* border: 2px dashed black; */
+        /* background-color: rgba(0, 255, 255, 0.1); */
+        height: 100%;
+        width: 100%;
+        margin: 1% 1% 0px 1%;/*上右下左*/
+        padding: 0%;
+        align-items: center;
+    }
+    .postphoto img {
+        max-width: 100%;
+        max-height: 100%;
+      }
+    .social{
+        display: none; /* 隱藏元素 */
+    }
+    .YT{
+        display: none; /* 隱藏元素 */
+    }
+    .X{
+        display: none; /* 隱藏元素 */
+    }
+    .FB{
+        display: none; /* 隱藏元素 */
+    }
+    .footer{
+        background-color: rgb(98, 96, 96);
+        margin: 5% 0% 0% 0%;
+        /*border: 2px dashed black;*/
+        height: 300px;
+        width: 100%;
+        float:left;
+    }
+    .footer img{
+        max-width: 70%;
+        max-height: 70%;
+    }
+    #pano {
+        width: 100%;
+        height: 100vh;
+        background-color: black; /* 背景色設置為黑色便於檢查 */
+    }
 }
+

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Re;Birth Studio|官網首頁</title>
-    <link rel="stylesheet" href="assest/css/styles.css">
+    
     <script src="assest/js/scripts.js"></script>
     <!--SEO-->
     <meta name="title" content="Re;Birth Studio官網">
@@ -26,20 +26,32 @@
     <meta property="twitter:description" content="Re;Birth Studio的官網首頁連結">
     <meta property="twitter:card" content="">
     <meta property="twitter:site" content="Re;Birth Studio">
+    <!-- owl.carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    </link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    </link>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assest/css/styles.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
                 <li>
-                    <p>關於重生計畫</p>
+                    <a>關於重生計畫</a>
                     <ul class="dropdown">
                         <li><a href="#">成員介紹</a></li>
                         <li><a href="#">商業成果</a></li>
                     </ul>
                 </li>
                 <li>
-                    <p>最新消息</p>
+                    <a>最新消息</a>
                     <ul class="dropdown">
                         <li><a href="#">公告</a></li>
                         <li><a href="#">近期周邊</a></li>
@@ -47,7 +59,7 @@
                     </ul>
                 </li>
                 <li>
-                    <p>藝人</p>
+                    <a>藝人</a>
                     <ul class="dropdown">
                         <li><a href="#">旗下</a></li>
                         <li><a href="#">合作</a></li>
@@ -56,14 +68,14 @@
                 <li><a href="index.html" class="highlight" style="border-top: 2px solid  black;">Re;Birth Studio</a></li>
                 <li><a href="#">周邊商品</a></li>
                 <li>
-                    <p>委託詳情</p>
+                    <a>委託詳情</a>
                     <ul class="dropdown">
                         <li><a href="#">作品參考</a></li>
                         <li><a href="#">委託詢問</a></li>
                     </ul>
                 </li>
                 <li class="language">
-                    <p>Language</p>
+                    <a>Language</a>
                     <ul class="dropdown">
                         <li><a href="#">中文</a></li>
                         <li><a href="#">日本語</a></li>
@@ -75,65 +87,99 @@
     </header>
     <main>
         <section class="carousel">
-            <h2>多圖輪播</h2>
-            <!-- 多圖輪播的內容將在這裡 -->
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="assest/img/demo.png" class="d-block w-100" alt="demo photo">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assest/img/demo.png" class="d-block w-100" alt="demo photo">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assest/img/demo.png" class="d-block w-100" alt="demo photo">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assest/img/demo.png" class="d-block w-100" alt="demo photo">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="assest/img/demo.png" class="d-block w-100" alt="demo photo">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
         </section>
 
         <section class="logo">
-            <h2>logo</h2>
-            <!-- Logo的內容將在這裡 -->
+            <img src="assest/img/logo.png"alt="logo photo">
         </section>
 
         <section class="introduction">
-            <h2>介紹</h2>
+            <h1>工作室介紹</h1>
+            <p style="font-size: 30px; background-color: rgba(127, 255, 212,0.2);">
+                浴火重生、追本溯源，帶來嶄新的創意結合回歸原始的藝術/灰の中から再生し、ルーツを遡り、原始の芸術への回帰と組み合わせて、新たな創造性をもたらす
+            </p>
             <!-- 介紹的內容將在這裡 -->
         </section>
 
         <section  class="news">
-            <h2>最新消息</h2>
+            <h1>最新消息</h1>
             <div class="newspost">
-                <h3><a href="#" style="border: 2px solid  black; padding: 5px;" >公 告+</a></h3>
-                <div class="post">
+                <h3>&nbsp;<a href="#" style="border: 2px solid  black; padding: 3px; float: left;" >公 告+</a></h3>
+                <div class="post1">
                     <div class="postphoto">
-                        
+                        <img src="assest/img/demo.png"alt="demo photo">
                     </div>
-                    <p>標題文字 </p>
+                    <a>這裡是標題 </a>
                 </div>
-                <div class="post">
+                <div class="post2">
                     <div class="postphoto">
-                        
+                        <img src="assest/img/demo.png"alt="demo photo">
                     </div>
-                    <p>標題文字 </p>
+                    <a>這裡是標題 </a>
                 </div>
             </div>
             <div class="commodity">
-                <h3><a href="#" style="border: 2px solid  black; padding: 5px;" >近期周邊+</a></h3>
-                <div class="post">
+                <h3>&nbsp;<a href="#" style="border: 2px solid  black; padding: 5px;float: left;" >近期周邊+</a></h3>
+                <div class="post1">
                     <div class="postphoto">
-                        
+                        <img src="assest/img/demo.png"alt="demo photo">
                     </div>
-                    <p>標題文字 </p>
+                    <a>這裡是標題 </a>
                 </div>
-                <div class="post">
+                <div class="post2">
                     <div class="postphoto">
-                        
+                        <img src="assest/img/demo.png"alt="demo photo">
                     </div>
-                    <p>標題文字 </p>
+                    <a>這裡是標題 </a>
                 </div>
             </div>
             <div class="else">
-                <h3><a href="#" style="border: 2px solid  black; padding: 5px;" >其 他+</a></h3>
-                <div class="post">
+                <h3>&nbsp;<a href="#" style="border: 2px solid  black; padding: 5px;float: left;" >其 他+</a></h3>
+                <div class="post1">
                     <div class="postphoto">
-                        
+                        <img src="assest/img/demo.png"alt="demo photo">
                     </div>
-                    <p>標題文字 </p>
+                    <a>這裡是標題 </a>
                 </div>
-                <div class="post">
+                <div class="post2">
                     <div class="postphoto">
-                        
+                        <img src="assest/img/demo.png"alt="demo photo">
                     </div>
-                    <p>標題文字 </p>
+                    <a>這裡是標題 </a>
                 </div>
             </div>
             <!-- 介紹的內容將在這裡 -->
@@ -148,8 +194,8 @@
                 <a style="font-size: 100px;"> YT <br> 尚未連接</a>
             </div>
             <div class="X">
-                <a class="twitter-timeline" data-height="1000" data-theme="dark" href="https://twitter.com/puresti2050?ref_src=twsrc%5Etfw">
-                    Tweets by puresti2050</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <!-- <a class="twitter-timeline" data-height="1000" data-theme="dark" href="https://twitter.com/puresti2050?ref_src=twsrc%5Etfw">
+                    Tweets by puresti2050</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
             </div>
             <div class="FB">
                 <a style="font-size: 100px;"> FB <br> 尚未連接</a>
@@ -157,13 +203,31 @@
         </section>
     
     <section class="footer">
-
+        <img src="assest/img/logo.png"alt="logo photo">
+        <br>
         
-        <p>CONTANT <br>
+        <a>CONTANT <br>
         puresti2050@gmail.com
-        </p>
+        </a>
     </section>
 </main>
-    
+    <script>
+        (".owl-carousel").owlCarousel({
+        loop: true, // 循環播放
+        margin: 10, // 外距 10px
+        nav: true, // 顯示點點
+        responsive: {
+            0: {
+            items: 1 // 螢幕大小為 0~600 顯示 1 個項目
+            },
+            600: {
+            items: 3 // 螢幕大小為 600~1000 顯示 3 個項目
+            },
+            1000: {
+            items: 5 // 螢幕大小為 1000 以上 顯示 5 個項目
+            }
+        }
+        });
+    </script>
 </body>
 </html>
